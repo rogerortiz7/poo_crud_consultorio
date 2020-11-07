@@ -5,12 +5,12 @@
 
     <main class="container text-center">
 
-        <h2 class="text-center">Nuevo Estudiante</h2>
+        <h2 class="text-center">Nuevo Ticket</h2>
 
         <form action='?action=store' method="post">
             <input type="text" name="name" required>
             <input type="submit" value="Crear">
-            <input type="reset" value="Reset">
+            <input type="reset" value="Limpiar">
         </form>
     </main>
 

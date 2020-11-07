@@ -14,9 +14,9 @@
             <thead class="thead-light">
                 <tr>
                     <th>#</th>
-                    <th>Name</th>
-                    <th>Created At</th>
-                    <th>Options</th>
+                    <th>Nombre-Team</th>
+                    <th>Fecha de Creación</th>
+                    <th>Opciones</th>
                 </tr>
             </thead>
 
