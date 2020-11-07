@@ -10,13 +10,15 @@ class Student
 {
     private  $id;
     private  $name;
+    private  $subject;
     private  $created_at;
     private $database;
     private $table = "alumno";
 
-    public function __construct(string $name = '', int $id = null, string $created_at = null)
+    public function __construct(string $name = '', string $subject = '', int $id = null, string $created_at = null)
     {
         $this->name = $name;
+        $this->subject = $subject;
         $this->id = $id;
         $this->created_at = $created_at;
 
@@ -28,6 +30,11 @@ class Student
     public function getName()
     {
         return $this->name;
+    }
+
+    public function getSubject()
+    {
+        return $this->subject;
     }
 
     public function getId()
@@ -56,7 +63,7 @@ class Student
         $studentsArray = $query->fetchAll();
         $studentList = [];
         foreach ($studentsArray as $student) {
-            $studentItem = new Student($student["name"], $student["id"], $student["created_at"]);
+            $studentItem = new Student($student["name"], $student["subject"], $student["id"], $student["created_at"]);
             array_push($studentList, $studentItem);
         }
 
