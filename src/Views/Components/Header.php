@@ -1,3 +1,3 @@
 <header>
-    <h1 class="jumbotron text-center">Student Manager</h1>
+    <h1 class="jumbotron text-center">Consultorio F5</h1>
 </header>
