@@ -23,10 +23,10 @@ class Database
     private function getConnection()
     {
 
-        $host = "db";
-        $user = "root";
-        $pass = "root";
-        $database = "alunno";
+        $host = "eu-cdbr-west-03.cleardb.net";
+        $user = "b418cdd0afdd34";
+        $pass = "8408d282";
+        $database = "heroku_3262b330d12208b";
         $charset = "utf-8";
         $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
         $pdo = new pdo("mysql:host={$host};dbname={$database};charset{$charset}", $user, $pass, $options);
