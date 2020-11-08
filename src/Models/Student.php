@@ -54,7 +54,7 @@ class Student
 
     public function save(): void
     {
-        $this->database->mysql->query("INSERT INTO `{$this->table}` (`name`) VALUES ('$this->name');");
+        $this->database->mysql->query("INSERT INTO `{$this->table}` (`name`, `subject`) VALUES ('$this->name', '$this->subject')");
     }
 
     public function all()

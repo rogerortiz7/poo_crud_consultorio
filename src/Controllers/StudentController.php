@@ -58,9 +58,8 @@ class StudentController
 
     public function store(array $request): void
     {
-        $newStudent = new Student($request["name"]);
+        $newStudent = new Student($request["name"], $request["subject"]);
         $newStudent->save();
-
         $this->index();
     }
 
