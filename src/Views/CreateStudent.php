@@ -9,6 +9,7 @@
 
         <form action='?action=store' method="post">
             <input type="text" name="name" required>
+            <input type="text" name="subject" required>
             <input type="submit" value="Crear">
             <input type="reset" value="Limpiar">
         </form>
