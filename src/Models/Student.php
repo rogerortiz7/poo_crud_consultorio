@@ -51,6 +51,10 @@ class Student
     {
         $this->name = $name;
     }
+    public function changeSubject($subject)
+    {
+        $this->subject = $subject;
+    }
 
     public function save(): void
     {
@@ -96,6 +100,6 @@ class Student
 
     public function Update()
     {
-        $this->database->mysql->query("UPDATE `{$this->table}` SET `name` =  '{$this->name}' WHERE `id` = {$this->id}");
+        $this->database->mysql->query("UPDATE `{$this->table}` SET `name` =  '{$this->name}' , `subject`= '{$this->subject}' WHERE `id` = {$this->id}");
     }
 }
