@@ -9,6 +9,7 @@
 
         <form action='?action=update&id=<?php echo $data["student"]->getId() ?>' method="post">
             <input type="text" name="name" required value='<?php echo $data["student"]->getName() ?>'>
+            <input type="text" name="subject" required value='<?php echo $data["student"]->getSubject() ?>'>
             <input type="submit" value="Editar">
             <input type="reset" value="Limpiar">
         </form>
