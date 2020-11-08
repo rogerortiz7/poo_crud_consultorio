@@ -15,6 +15,7 @@
                 <tr>
                     <th>#</th>
                     <th>Nombre-Team</th>
+                    <th>Tema</th>
                     <th>Fecha de Creación</th>
                     <th>Opciones</th>
                 </tr>
@@ -27,6 +28,7 @@
                     <tr>
                         <td>{$student->getId()}</td>
                         <td>{$student->getName()}</td>
+                        <td>{$student->getSubject()}</td>
                         <td>{$student->getCreatedAt()}</td>
                         <td>               
                         <a href='?action=edit&id={$student->getId()}'><i class='lnr lnr-pencil'></i></a>
