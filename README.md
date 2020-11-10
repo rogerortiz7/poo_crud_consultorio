@@ -3,7 +3,7 @@
 ## Requiered
 
 - PHP 7.4
-- Composer installed
+- Composer installed or locally composer.phar
 
 ## Install
 
@@ -11,9 +11,9 @@
 
 ## DataBase Connection
 
-- Set you credentials on .env
+- Set you credentials on .env  (dotenv library)
 
-## Deployment on Heroku
+## Deployed on Heroku
 
 https://consultorio-f5.herokuapp.com/ 
 
