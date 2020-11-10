@@ -9,8 +9,14 @@
 
 - composer install
 
-## Run Tests
+## DataBase Connection
 
-- vendor/bin/phpunit
+- Set you credentials on .env
+
+## Deployment on Heroku
+
+https://consultorio-f5.herokuapp.com/ 
+
+
 
 
