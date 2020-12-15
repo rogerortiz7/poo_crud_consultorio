@@ -13,7 +13,7 @@ class Student
     private  $subject;
     private  $created_at;
     private $database;
-    private $table = "alumno";
+    private $table = "alumnos";
 
     public function __construct(string $name = '', string $subject = '', int $id = null, string $created_at = null)
     {

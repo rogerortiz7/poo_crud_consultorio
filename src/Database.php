@@ -4,6 +4,11 @@ namespace App;
 
 use PDO;
 use PDOException;
+use Dotenv\Dotenv as Dotenv;
+
+    $dotenv = Dotenv::createUnsafeImmutable( __DIR__.'/..');
+    $dotenv->load();
+
 
 class Database
 {
@@ -23,10 +28,15 @@ class Database
     private function getConnection()
     {
 
-        $host = "eu-cdbr-west-03.cleardb.net";
-        $user = "b418cdd0afdd34";
-        $pass = "8408d282";
-        $database = "heroku_3262b330d12208b";
+        $host       = getenv('DB_HOST');
+        $user       = getenv('DB_USER');
+        $pass       = getenv('DB_PASS');
+        $database   = getenv('DB_DATABASE');
+
+//        $host = "mysql8";
+//        $user = "root";
+//        $pass = "root";
+//        $database = "crud";
         $charset = "utf-8";
         $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
         $pdo = new pdo("mysql:host={$host};dbname={$database};charset{$charset}", $user, $pass, $options);
