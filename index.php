@@ -10,7 +10,9 @@
 <body>
 
     <?php
-    
+
+    echo "llego";
+    die;
     require("vendor/autoload.php");
     require("src/index.php");
 
